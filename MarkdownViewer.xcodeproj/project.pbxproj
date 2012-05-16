@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E348B1491563E01100BAED1A /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = E348B1481563E01100BAED1A /* icon.icns */; };
 		E3AA537515637978005E8165 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3AA537415637978005E8165 /* Cocoa.framework */; };
 		E3AA537F15637978005E8165 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E3AA537D15637978005E8165 /* InfoPlist.strings */; };
 		E3AA538115637978005E8165 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E3AA538015637978005E8165 /* main.m */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E348B1481563E01100BAED1A /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
 		E3AA537015637978005E8165 /* MarkdownViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarkdownViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3AA537415637978005E8165 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		E3AA537715637978005E8165 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -130,6 +132,7 @@
 		E3AA537B15637978005E8165 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E348B1481563E01100BAED1A /* icon.icns */,
 				E3AA537C15637978005E8165 /* MarkdownViewer-Info.plist */,
 				E3AA537D15637978005E8165 /* InfoPlist.strings */,
 				E3AA538015637978005E8165 /* main.m */,
@@ -242,6 +245,7 @@
 				E3AA538E15637978005E8165 /* MainMenu.xib in Resources */,
 				E3AA53A01563884A005E8165 /* style.css in Resources */,
 				E3AA53A11563884A005E8165 /* template.html in Resources */,
+				E348B1491563E01100BAED1A /* icon.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,6 +391,7 @@
 				E3AA539315637978005E8165 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
