@@ -99,6 +99,18 @@
     return YES;
 }
 
+#pragma mark Handling Navigation
+
+- (void) webView:(WebView *)sender decidePolicyForNavigationAction:(NSDictionary *)actionInformation
+    request:(NSURLRequest *)request frame:(WebFrame *)frame
+    decisionListener:(id <WebPolicyDecisionListener>)listener
+{
+    if ([[request URL] host])
+        [[NSWorkspace sharedWorkspace] openURL:[request URL]];
+    else
+        [listener use];
+}
+
 #pragma mark Tracking File Update Date
 
 - (NSDate *)fileUpdateDate
