@@ -1,0 +1,394 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E3AA537515637978005E8165 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3AA537415637978005E8165 /* Cocoa.framework */; };
+		E3AA537F15637978005E8165 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E3AA537D15637978005E8165 /* InfoPlist.strings */; };
+		E3AA538115637978005E8165 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E3AA538015637978005E8165 /* main.m */; };
+		E3AA538815637978005E8165 /* MVDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = E3AA538715637978005E8165 /* MVDocument.m */; };
+		E3AA538B15637978005E8165 /* MVDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3AA538915637978005E8165 /* MVDocument.xib */; };
+		E3AA538E15637978005E8165 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3AA538C15637978005E8165 /* MainMenu.xib */; };
+		E3AA539915637AD6005E8165 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3AA539815637AD6005E8165 /* WebKit.framework */; };
+		E3AA539F1563884A005E8165 /* MVConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = E3AA539B1563884A005E8165 /* MVConverter.m */; };
+		E3AA53A01563884A005E8165 /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = E3AA539D1563884A005E8165 /* style.css */; };
+		E3AA53A11563884A005E8165 /* template.html in Resources */ = {isa = PBXBuildFile; fileRef = E3AA539E1563884A005E8165 /* template.html */; };
+		E3AA53B41563885C005E8165 /* houdini_href_e.c in Sources */ = {isa = PBXBuildFile; fileRef = E3AA53A51563885C005E8165 /* houdini_href_e.c */; };
+		E3AA53B51563885C005E8165 /* houdini_html_e.c in Sources */ = {isa = PBXBuildFile; fileRef = E3AA53A61563885C005E8165 /* houdini_html_e.c */; };
+		E3AA53B61563885C005E8165 /* html.c in Sources */ = {isa = PBXBuildFile; fileRef = E3AA53A71563885C005E8165 /* html.c */; };
+		E3AA53B81563885C005E8165 /* autolink.c in Sources */ = {isa = PBXBuildFile; fileRef = E3AA53AB1563885C005E8165 /* autolink.c */; };
+		E3AA53B91563885C005E8165 /* buffer.c in Sources */ = {isa = PBXBuildFile; fileRef = E3AA53AD1563885C005E8165 /* buffer.c */; };
+		E3AA53BA1563885C005E8165 /* markdown.c in Sources */ = {isa = PBXBuildFile; fileRef = E3AA53B01563885C005E8165 /* markdown.c */; };
+		E3AA53BB1563885C005E8165 /* stack.c in Sources */ = {isa = PBXBuildFile; fileRef = E3AA53B21563885C005E8165 /* stack.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E3AA537015637978005E8165 /* MarkdownViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarkdownViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3AA537415637978005E8165 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		E3AA537715637978005E8165 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		E3AA537815637978005E8165 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		E3AA537915637978005E8165 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E3AA537C15637978005E8165 /* MarkdownViewer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MarkdownViewer-Info.plist"; sourceTree = "<group>"; };
+		E3AA537E15637978005E8165 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E3AA538015637978005E8165 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E3AA538215637978005E8165 /* MarkdownViewer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MarkdownViewer-Prefix.pch"; sourceTree = "<group>"; };
+		E3AA538615637978005E8165 /* MVDocument.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVDocument.h; sourceTree = "<group>"; };
+		E3AA538715637978005E8165 /* MVDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVDocument.m; sourceTree = "<group>"; };
+		E3AA538A15637978005E8165 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MVDocument.xib; sourceTree = "<group>"; };
+		E3AA538D15637978005E8165 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		E3AA539815637AD6005E8165 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/WebKit.framework; sourceTree = DEVELOPER_DIR; };
+		E3AA539A1563884A005E8165 /* MVConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVConverter.h; sourceTree = "<group>"; };
+		E3AA539B1563884A005E8165 /* MVConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVConverter.m; sourceTree = "<group>"; };
+		E3AA539D1563884A005E8165 /* style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
+		E3AA539E1563884A005E8165 /* template.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = template.html; sourceTree = "<group>"; };
+		E3AA53A41563885C005E8165 /* houdini.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = houdini.h; sourceTree = "<group>"; };
+		E3AA53A51563885C005E8165 /* houdini_href_e.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = houdini_href_e.c; sourceTree = "<group>"; };
+		E3AA53A61563885C005E8165 /* houdini_html_e.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = houdini_html_e.c; sourceTree = "<group>"; };
+		E3AA53A71563885C005E8165 /* html.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = html.c; sourceTree = "<group>"; };
+		E3AA53A81563885C005E8165 /* html.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = html.h; sourceTree = "<group>"; };
+		E3AA53AB1563885C005E8165 /* autolink.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = autolink.c; sourceTree = "<group>"; };
+		E3AA53AC1563885C005E8165 /* autolink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = autolink.h; sourceTree = "<group>"; };
+		E3AA53AD1563885C005E8165 /* buffer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = buffer.c; sourceTree = "<group>"; };
+		E3AA53AE1563885C005E8165 /* buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = buffer.h; sourceTree = "<group>"; };
+		E3AA53AF1563885C005E8165 /* html_blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = html_blocks.h; sourceTree = "<group>"; };
+		E3AA53B01563885C005E8165 /* markdown.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = markdown.c; sourceTree = "<group>"; };
+		E3AA53B11563885C005E8165 /* markdown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = markdown.h; sourceTree = "<group>"; };
+		E3AA53B21563885C005E8165 /* stack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = stack.c; sourceTree = "<group>"; };
+		E3AA53B31563885C005E8165 /* stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stack.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E3AA536D15637978005E8165 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3AA539915637AD6005E8165 /* WebKit.framework in Frameworks */,
+				E3AA537515637978005E8165 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E3AA536515637978005E8165 = {
+			isa = PBXGroup;
+			children = (
+				E3AA537A15637978005E8165 /* MarkdownViewer */,
+				E3AA537315637978005E8165 /* Frameworks */,
+				E3AA537115637978005E8165 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E3AA537115637978005E8165 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E3AA537015637978005E8165 /* MarkdownViewer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E3AA537315637978005E8165 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E3AA537415637978005E8165 /* Cocoa.framework */,
+				E3AA539815637AD6005E8165 /* WebKit.framework */,
+				E3AA537615637978005E8165 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E3AA537615637978005E8165 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E3AA537715637978005E8165 /* AppKit.framework */,
+				E3AA537815637978005E8165 /* CoreData.framework */,
+				E3AA537915637978005E8165 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		E3AA537A15637978005E8165 /* MarkdownViewer */ = {
+			isa = PBXGroup;
+			children = (
+				E3AA538C15637978005E8165 /* MainMenu.xib */,
+				E3AA539A1563884A005E8165 /* MVConverter.h */,
+				E3AA539B1563884A005E8165 /* MVConverter.m */,
+				E3AA538615637978005E8165 /* MVDocument.h */,
+				E3AA538715637978005E8165 /* MVDocument.m */,
+				E3AA538915637978005E8165 /* MVDocument.xib */,
+				E3AA53A21563884F005E8165 /* sundown */,
+				E3AA537B15637978005E8165 /* Supporting Files */,
+				E3AA539C1563884A005E8165 /* template */,
+			);
+			path = MarkdownViewer;
+			sourceTree = "<group>";
+		};
+		E3AA537B15637978005E8165 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E3AA537C15637978005E8165 /* MarkdownViewer-Info.plist */,
+				E3AA537D15637978005E8165 /* InfoPlist.strings */,
+				E3AA538015637978005E8165 /* main.m */,
+				E3AA538215637978005E8165 /* MarkdownViewer-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E3AA539C1563884A005E8165 /* template */ = {
+			isa = PBXGroup;
+			children = (
+				E3AA539D1563884A005E8165 /* style.css */,
+				E3AA539E1563884A005E8165 /* template.html */,
+			);
+			path = template;
+			sourceTree = "<group>";
+		};
+		E3AA53A21563884F005E8165 /* sundown */ = {
+			isa = PBXGroup;
+			children = (
+				E3AA53A31563885C005E8165 /* html */,
+				E3AA53AA1563885C005E8165 /* src */,
+			);
+			name = sundown;
+			sourceTree = "<group>";
+		};
+		E3AA53A31563885C005E8165 /* html */ = {
+			isa = PBXGroup;
+			children = (
+				E3AA53A41563885C005E8165 /* houdini.h */,
+				E3AA53A51563885C005E8165 /* houdini_href_e.c */,
+				E3AA53A61563885C005E8165 /* houdini_html_e.c */,
+				E3AA53A71563885C005E8165 /* html.c */,
+				E3AA53A81563885C005E8165 /* html.h */,
+			);
+			name = html;
+			path = sundown/html;
+			sourceTree = "<group>";
+		};
+		E3AA53AA1563885C005E8165 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				E3AA53AB1563885C005E8165 /* autolink.c */,
+				E3AA53AC1563885C005E8165 /* autolink.h */,
+				E3AA53AD1563885C005E8165 /* buffer.c */,
+				E3AA53AE1563885C005E8165 /* buffer.h */,
+				E3AA53AF1563885C005E8165 /* html_blocks.h */,
+				E3AA53B01563885C005E8165 /* markdown.c */,
+				E3AA53B11563885C005E8165 /* markdown.h */,
+				E3AA53B21563885C005E8165 /* stack.c */,
+				E3AA53B31563885C005E8165 /* stack.h */,
+			);
+			name = src;
+			path = sundown/src;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E3AA536F15637978005E8165 /* MarkdownViewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E3AA539115637978005E8165 /* Build configuration list for PBXNativeTarget "MarkdownViewer" */;
+			buildPhases = (
+				E3AA536C15637978005E8165 /* Sources */,
+				E3AA536D15637978005E8165 /* Frameworks */,
+				E3AA536E15637978005E8165 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MarkdownViewer;
+			productName = MarkdownViewer;
+			productReference = E3AA537015637978005E8165 /* MarkdownViewer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E3AA536715637978005E8165 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MV;
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = E3AA536A15637978005E8165 /* Build configuration list for PBXProject "MarkdownViewer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E3AA536515637978005E8165;
+			productRefGroup = E3AA537115637978005E8165 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E3AA536F15637978005E8165 /* MarkdownViewer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E3AA536E15637978005E8165 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3AA537F15637978005E8165 /* InfoPlist.strings in Resources */,
+				E3AA538B15637978005E8165 /* MVDocument.xib in Resources */,
+				E3AA538E15637978005E8165 /* MainMenu.xib in Resources */,
+				E3AA53A01563884A005E8165 /* style.css in Resources */,
+				E3AA53A11563884A005E8165 /* template.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E3AA536C15637978005E8165 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3AA538115637978005E8165 /* main.m in Sources */,
+				E3AA538815637978005E8165 /* MVDocument.m in Sources */,
+				E3AA539F1563884A005E8165 /* MVConverter.m in Sources */,
+				E3AA53B41563885C005E8165 /* houdini_href_e.c in Sources */,
+				E3AA53B51563885C005E8165 /* houdini_html_e.c in Sources */,
+				E3AA53B61563885C005E8165 /* html.c in Sources */,
+				E3AA53B81563885C005E8165 /* autolink.c in Sources */,
+				E3AA53B91563885C005E8165 /* buffer.c in Sources */,
+				E3AA53BA1563885C005E8165 /* markdown.c in Sources */,
+				E3AA53BB1563885C005E8165 /* stack.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E3AA537D15637978005E8165 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E3AA537E15637978005E8165 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E3AA538915637978005E8165 /* MVDocument.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E3AA538A15637978005E8165 /* en */,
+			);
+			name = MVDocument.xib;
+			sourceTree = "<group>";
+		};
+		E3AA538C15637978005E8165 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E3AA538D15637978005E8165 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E3AA538F15637978005E8165 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = "";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = "";
+			};
+			name = Debug;
+		};
+		E3AA539015637978005E8165 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = "";
+				SDKROOT = "";
+			};
+			name = Release;
+		};
+		E3AA539215637978005E8165 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MarkdownViewer/MarkdownViewer-Prefix.pch";
+				INFOPLIST_FILE = "MarkdownViewer/MarkdownViewer-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E3AA539315637978005E8165 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MarkdownViewer/MarkdownViewer-Prefix.pch";
+				INFOPLIST_FILE = "MarkdownViewer/MarkdownViewer-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E3AA536A15637978005E8165 /* Build configuration list for PBXProject "MarkdownViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3AA538F15637978005E8165 /* Debug */,
+				E3AA539015637978005E8165 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E3AA539115637978005E8165 /* Build configuration list for PBXNativeTarget "MarkdownViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3AA539215637978005E8165 /* Debug */,
+				E3AA539315637978005E8165 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E3AA536715637978005E8165 /* Project object */;
+}

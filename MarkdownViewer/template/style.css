@@ -1,0 +1,95 @@
+html {
+  background: #F8F8F8;
+}
+
+body {
+  font: 80% helvetica, arial, sans-serif;
+  margin: 1em auto;
+  padding: .7em 2em 1.2em;
+}
+
+body h1:first-child {
+  margin-top: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  padding-top: .5em;
+}
+
+blockquote, p, pre, ol, ul, dl, table {
+  margin: 1em 0;
+}
+
+p {
+  line-height: 150%;
+  margin: 1em 0;
+}
+
+code, pre {
+  background: #EEE;
+  border: 1px solid #DDD;
+  color: #555;
+  font: 90% monaco, "Courier New", monospace;
+}
+
+pre {
+  border-radius: 3px;
+  overflow: auto;
+  padding: .8em 1.2em;
+}
+
+pre code {
+  background: transparent;
+  border: none;
+  font-size: 100%;
+}
+
+blockquote {
+  border-left: 5px solid #DDD;
+  color: #555;
+  padding-left: .6em;
+}
+
+ol, ul {
+  margin: 1em 0 1em 5em;
+  padding: 0;
+}
+
+li, dd, dt {
+  margin: .5em 0;
+}
+
+li ol, li ul {
+  margin: 0 0 0 5em;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 5em;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table th, table td {
+  border: 1px solid #DDD;
+  padding: .4em 1.2em;
+}
+
+a {
+  color: #47C;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  border: none;
+  max-width: 100%;
+}
