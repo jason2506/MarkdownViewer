@@ -28,10 +28,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import <Webkit/WebView.h>
-#import <Webkit/WebFrame.h>
-#import <Webkit/WebPolicyDelegate.h>
-#import <Webkit/WebDataSource.h>
+#import <Webkit/WebKit.h>
 
 #import "MVConverter.h"
 

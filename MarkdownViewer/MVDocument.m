@@ -33,10 +33,15 @@
 
 @property (strong) NSTimer *timer;
 @property (strong) NSDate *lastUpdate;
+@property (assign) NSPoint scrollPosition;
 
 - (NSDate *)fileUpdateDate;
 - (BOOL) isFileUpdated;
 - (void) refresh;
+
+- (NSScrollView *) scrollView;
+- (void) saveScrollPosition;
+- (void) restoreScrollPosition;
 
 @end
 
@@ -51,6 +56,7 @@
 
 @synthesize timer = _timer;
 @synthesize lastUpdate = _lastUpdate;
+@synthesize scrollPosition = _scrollPosition;
 
 #pragma mark Initializing
 
@@ -124,6 +130,13 @@
         [listener use];
 }
 
+#pragma mark Handling Load Finish
+
+- (void) webView:(WebView *)sender didFinishLoadForFrame:(WebFrame *)frame
+{
+    [self restoreScrollPosition];
+}
+
 #pragma mark Tracking File Update Date
 
 - (NSDate *)fileUpdateDate
@@ -143,12 +156,31 @@
     return isUpdated;
 }
 
+#pragma mark Saving / Restoring Scroll Position
+
+- (NSScrollView *) scrollView
+{
+    return [[[[_webView mainFrame] frameView] documentView] enclosingScrollView];
+}
+
+- (void) saveScrollPosition
+{
+    _scrollPosition = [[[self scrollView] contentView] bounds].origin;
+}
+
+- (void) restoreScrollPosition
+{
+    [[[self scrollView] documentView] scrollPoint:_scrollPosition];
+}
+
 #pragma mark Refreshing WebView
 
 - (void) refresh
 {
     if (![self isFileUpdated])
         return;
+
+    [self saveScrollPosition];
 
     NSString *path = [[[self fileURL] path] stringByDeletingLastPathComponent];
     [[_webView mainFrame] loadHTMLString:[_converter preview]

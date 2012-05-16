@@ -81,7 +81,7 @@
 									<boolean value="NO" key="WebKitJavaScriptCanOpenWindowsAutomatically"/>
 									<boolean value="NO" key="WebKitJavaScriptEnabled"/>
 									<integer value="1" key="WebKitMinimumFontSize"/>
-									<boolean value="NO" key="WebKitPluginsEnabled"/>
+									<boolean value="YES" key="WebKitPluginsEnabled"/>
 								</dictionary>
 							</object>
 							<bool key="UseBackForwardList">YES</bool>
@@ -135,6 +135,14 @@
 						<reference key="destination" ref="512844837"/>
 					</object>
 					<int key="connectionID">100039</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">frameLoadDelegate</string>
+						<reference key="source" ref="1066925414"/>
+						<reference key="destination" ref="512844837"/>
+					</object>
+					<int key="connectionID">100040</int>
 				</object>
 			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -296,7 +304,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">100039</int>
+			<int key="maxID">100040</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes"/>
 		<int key="IBDocument.localizationMode">0</int>
