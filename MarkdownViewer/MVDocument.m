@@ -99,6 +99,19 @@
     return YES;
 }
 
+- (BOOL) writeToURL:(NSURL *)absoluteURL ofType:(NSString *)typeName error:(NSError **)outError
+{
+    NSData *source = [[[_webView mainFrame] dataSource] data];
+    [source writeToFile:[absoluteURL path] atomically:YES];
+    return YES;
+}
+
+- (BOOL) prepareSavePanel:(NSSavePanel *)savePanel
+{
+    [savePanel setAllowedFileTypes:[NSArray arrayWithObject:@"html"]];
+    return YES;
+}
+
 #pragma mark Handling Navigation
 
 - (void) webView:(WebView *)sender decidePolicyForNavigationAction:(NSDictionary *)actionInformation
