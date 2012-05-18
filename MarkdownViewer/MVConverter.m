@@ -42,7 +42,7 @@ static int MAX_NESTING_LEVEL = 16;
 
 - (NSString *) preview
 {
-    NSString *content = [[NSString alloc] initWithContentsOfFile:_file
+    NSString *content = [[NSString alloc] initWithContentsOfFile:[self file]
                                                         encoding:NSUTF8StringEncoding
                                                            error:nil];
 

@@ -80,8 +80,7 @@
 
 - (void) close
 {
-    [_timer invalidate];
-    _timer = nil;
+    [[self timer] invalidate];
 
     [super close];
 }
@@ -90,24 +89,24 @@
 {
     [super windowControllerDidLoadNib:aController];
 
-    _lastUpdate = [NSDate distantPast];
-    _timer = [NSTimer scheduledTimerWithTimeInterval:.5
-                                              target:self
-                                            selector:@selector(refresh)
-                                            userInfo:nil
-                                             repeats:YES];
+    [self setLastUpdate:[NSDate distantPast]];
+    [self setTimer:[NSTimer scheduledTimerWithTimeInterval:.5
+                                                    target:self
+                                                  selector:@selector(refresh)
+                                                  userInfo:nil
+                                                   repeats:YES]];
     [self refresh];
 }
 
 - (BOOL) readFromURL:(NSURL *)url ofType:(NSString *)typeName error:(NSError **)outError
 {
-    [_converter setFile:[url path]];
+    [[self converter] setFile:[url path]];
     return YES;
 }
 
 - (BOOL) writeToURL:(NSURL *)absoluteURL ofType:(NSString *)typeName error:(NSError **)outError
 {
-    NSData *source = [[[_webView mainFrame] dataSource] data];
+    NSData *source = [[[[self webView] mainFrame] dataSource] data];
     [source writeToFile:[absoluteURL path] atomically:YES];
     return YES;
 }
@@ -149,9 +148,9 @@
 - (BOOL) isFileUpdated
 {
     NSDate *lastUpdate = [self fileUpdateDate];
-    BOOL isUpdated = [lastUpdate compare:_lastUpdate] == NSOrderedDescending;
+    BOOL isUpdated = [lastUpdate compare:[self lastUpdate]] == NSOrderedDescending;
     if (isUpdated)
-        _lastUpdate = lastUpdate;
+        [self setLastUpdate:lastUpdate];
 
     return isUpdated;
 }
@@ -160,17 +159,17 @@
 
 - (NSScrollView *) scrollView
 {
-    return [[[[_webView mainFrame] frameView] documentView] enclosingScrollView];
+    return [[[[[self webView] mainFrame] frameView] documentView] enclosingScrollView];
 }
 
 - (void) saveScrollPosition
 {
-    _scrollPosition = [[[self scrollView] contentView] bounds].origin;
+    [self setScrollPosition:[[[self scrollView] contentView] bounds].origin];
 }
 
 - (void) restoreScrollPosition
 {
-    [[[self scrollView] documentView] scrollPoint:_scrollPosition];
+    [[[self scrollView] documentView] scrollPoint:[self scrollPosition]];
 }
 
 #pragma mark Refreshing WebView
@@ -183,8 +182,8 @@
     [self saveScrollPosition];
 
     NSString *path = [[[self fileURL] path] stringByDeletingLastPathComponent];
-    [[_webView mainFrame] loadHTMLString:[_converter preview]
-                                 baseURL:[NSURL fileURLWithPath:path]];
+    [[[self webView] mainFrame] loadHTMLString:[[self converter] preview]
+                                       baseURL:[NSURL fileURLWithPath:path]];
 }
 
 @end
