@@ -22,7 +22,7 @@ I didn't want to install the dependencies just for a small script, so I wrote th
 
 ## License
 
-Copyright (c) 2012-2014 Chi-En Wu.
+Copyright (c) 2012-2014, Chi-En Wu
 
 Distributed under [The BSD 3-Clause License](http://opensource.org/licenses/BSD-3-Clause).
 
