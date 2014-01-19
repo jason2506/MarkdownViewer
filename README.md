@@ -22,8 +22,10 @@ I didn't want to install the dependencies just for a small script, so I wrote th
 
 ## License
 
-**MarkdownViewer** is provided under [BSD-licensed](http://www.opensource.org/licenses/BSD-3-Clause). See LICENSE file for more detail.
+Copyright (c) 2012-2014 Chi-En Wu.
 
-This project uses [sundown](https://github.com/tanoku/sundown) as the markdown parser. This library is provided under the [ISC License](http://www.isc.org/software/license).
+Distributed under [The BSD 3-Clause License](http://opensource.org/licenses/BSD-3-Clause).
 
-The app icon is designed by [Visual Pharm](http://www.visualpharm.com/). This icon is released under [CC BY-ND 3.0](http://creativecommons.org/licenses/by-nd/3.0/).
+This project uses [discount](https://github.com/Orc/discount) as the markdown parser, which is provided under the [The BSD 3-Clause License](http://opensource.org/licenses/BSD-3-Clause).
+
+The app icon is designed by [Visual Pharm](http://www.visualpharm.com/) and released under [CC BY-ND 3.0](http://creativecommons.org/licenses/by-nd/3.0/).

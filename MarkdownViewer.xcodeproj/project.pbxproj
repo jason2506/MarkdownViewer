@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E32CBAC8188BD34E000F1B07 /* libmarkdown.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E32CBAC7188BD34E000F1B07 /* libmarkdown.a */; };
 		E348B1491563E01100BAED1A /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = E348B1481563E01100BAED1A /* icon.icns */; };
 		E37215F315E06DB800E8340D /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E37215F215E06DB800E8340D /* WebKit.framework */; };
 		E3AA537515637978005E8165 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3AA537415637978005E8165 /* Cocoa.framework */; };
@@ -18,16 +19,11 @@
 		E3AA539F1563884A005E8165 /* MVConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = E3AA539B1563884A005E8165 /* MVConverter.m */; };
 		E3AA53A01563884A005E8165 /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = E3AA539D1563884A005E8165 /* style.css */; };
 		E3AA53A11563884A005E8165 /* template.html in Resources */ = {isa = PBXBuildFile; fileRef = E3AA539E1563884A005E8165 /* template.html */; };
-		E3AA53B41563885C005E8165 /* houdini_href_e.c in Sources */ = {isa = PBXBuildFile; fileRef = E3AA53A51563885C005E8165 /* houdini_href_e.c */; };
-		E3AA53B51563885C005E8165 /* houdini_html_e.c in Sources */ = {isa = PBXBuildFile; fileRef = E3AA53A61563885C005E8165 /* houdini_html_e.c */; };
-		E3AA53B61563885C005E8165 /* html.c in Sources */ = {isa = PBXBuildFile; fileRef = E3AA53A71563885C005E8165 /* html.c */; };
-		E3AA53B81563885C005E8165 /* autolink.c in Sources */ = {isa = PBXBuildFile; fileRef = E3AA53AB1563885C005E8165 /* autolink.c */; };
-		E3AA53B91563885C005E8165 /* buffer.c in Sources */ = {isa = PBXBuildFile; fileRef = E3AA53AD1563885C005E8165 /* buffer.c */; };
-		E3AA53BA1563885C005E8165 /* markdown.c in Sources */ = {isa = PBXBuildFile; fileRef = E3AA53B01563885C005E8165 /* markdown.c */; };
-		E3AA53BB1563885C005E8165 /* stack.c in Sources */ = {isa = PBXBuildFile; fileRef = E3AA53B21563885C005E8165 /* stack.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E32CBA15188BC86F000F1B07 /* markdown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = markdown.h; sourceTree = "<group>"; };
+		E32CBAC7188BD34E000F1B07 /* libmarkdown.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmarkdown.a; sourceTree = "<group>"; };
 		E348B1481563E01100BAED1A /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
 		E37215F215E06DB800E8340D /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = /System/Library/Frameworks/WebKit.framework; sourceTree = "<absolute>"; };
 		E3AA537015637978005E8165 /* MarkdownViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarkdownViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,20 +43,6 @@
 		E3AA539B1563884A005E8165 /* MVConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MVConverter.m; sourceTree = "<group>"; };
 		E3AA539D1563884A005E8165 /* style.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
 		E3AA539E1563884A005E8165 /* template.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = template.html; sourceTree = "<group>"; };
-		E3AA53A41563885C005E8165 /* houdini.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = houdini.h; sourceTree = "<group>"; };
-		E3AA53A51563885C005E8165 /* houdini_href_e.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = houdini_href_e.c; sourceTree = "<group>"; };
-		E3AA53A61563885C005E8165 /* houdini_html_e.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = houdini_html_e.c; sourceTree = "<group>"; };
-		E3AA53A71563885C005E8165 /* html.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = html.c; sourceTree = "<group>"; };
-		E3AA53A81563885C005E8165 /* html.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = html.h; sourceTree = "<group>"; };
-		E3AA53AB1563885C005E8165 /* autolink.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = autolink.c; sourceTree = "<group>"; };
-		E3AA53AC1563885C005E8165 /* autolink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = autolink.h; sourceTree = "<group>"; };
-		E3AA53AD1563885C005E8165 /* buffer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = buffer.c; sourceTree = "<group>"; };
-		E3AA53AE1563885C005E8165 /* buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = buffer.h; sourceTree = "<group>"; };
-		E3AA53AF1563885C005E8165 /* html_blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = html_blocks.h; sourceTree = "<group>"; };
-		E3AA53B01563885C005E8165 /* markdown.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = markdown.c; sourceTree = "<group>"; };
-		E3AA53B11563885C005E8165 /* markdown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = markdown.h; sourceTree = "<group>"; };
-		E3AA53B21563885C005E8165 /* stack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = stack.c; sourceTree = "<group>"; };
-		E3AA53B31563885C005E8165 /* stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stack.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E32CBAC8188BD34E000F1B07 /* libmarkdown.a in Frameworks */,
 				E37215F315E06DB800E8340D /* WebKit.framework in Frameworks */,
 				E3AA537515637978005E8165 /* Cocoa.framework in Frameworks */,
 			);
@@ -76,6 +59,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E32CB9FA188BC86F000F1B07 /* discount */ = {
+			isa = PBXGroup;
+			children = (
+				E32CBAC7188BD34E000F1B07 /* libmarkdown.a */,
+				E32CBA15188BC86F000F1B07 /* markdown.h */,
+			);
+			path = discount;
+			sourceTree = "<group>";
+		};
 		E3AA536515637978005E8165 = {
 			isa = PBXGroup;
 			children = (
@@ -122,7 +114,7 @@
 				E3AA538615637978005E8165 /* MVDocument.h */,
 				E3AA538715637978005E8165 /* MVDocument.m */,
 				E3AA538915637978005E8165 /* MVDocument.xib */,
-				E3AA53A21563884F005E8165 /* sundown */,
+				E32CB9FA188BC86F000F1B07 /* discount */,
 				E3AA537B15637978005E8165 /* Supporting Files */,
 				E3AA539C1563884A005E8165 /* template */,
 			);
@@ -148,45 +140,6 @@
 				E3AA539E1563884A005E8165 /* template.html */,
 			);
 			path = template;
-			sourceTree = "<group>";
-		};
-		E3AA53A21563884F005E8165 /* sundown */ = {
-			isa = PBXGroup;
-			children = (
-				E3AA53A31563885C005E8165 /* html */,
-				E3AA53AA1563885C005E8165 /* src */,
-			);
-			name = sundown;
-			sourceTree = "<group>";
-		};
-		E3AA53A31563885C005E8165 /* html */ = {
-			isa = PBXGroup;
-			children = (
-				E3AA53A41563885C005E8165 /* houdini.h */,
-				E3AA53A51563885C005E8165 /* houdini_href_e.c */,
-				E3AA53A61563885C005E8165 /* houdini_html_e.c */,
-				E3AA53A71563885C005E8165 /* html.c */,
-				E3AA53A81563885C005E8165 /* html.h */,
-			);
-			name = html;
-			path = sundown/html;
-			sourceTree = "<group>";
-		};
-		E3AA53AA1563885C005E8165 /* src */ = {
-			isa = PBXGroup;
-			children = (
-				E3AA53AB1563885C005E8165 /* autolink.c */,
-				E3AA53AC1563885C005E8165 /* autolink.h */,
-				E3AA53AD1563885C005E8165 /* buffer.c */,
-				E3AA53AE1563885C005E8165 /* buffer.h */,
-				E3AA53AF1563885C005E8165 /* html_blocks.h */,
-				E3AA53B01563885C005E8165 /* markdown.c */,
-				E3AA53B11563885C005E8165 /* markdown.h */,
-				E3AA53B21563885C005E8165 /* stack.c */,
-				E3AA53B31563885C005E8165 /* stack.h */,
-			);
-			name = src;
-			path = sundown/src;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,13 +212,6 @@
 				E3AA538115637978005E8165 /* main.m in Sources */,
 				E3AA538815637978005E8165 /* MVDocument.m in Sources */,
 				E3AA539F1563884A005E8165 /* MVConverter.m in Sources */,
-				E3AA53B41563885C005E8165 /* houdini_href_e.c in Sources */,
-				E3AA53B51563885C005E8165 /* houdini_html_e.c in Sources */,
-				E3AA53B61563885C005E8165 /* html.c in Sources */,
-				E3AA53B81563885C005E8165 /* autolink.c in Sources */,
-				E3AA53B91563885C005E8165 /* buffer.c in Sources */,
-				E3AA53BA1563885C005E8165 /* markdown.c in Sources */,
-				E3AA53BB1563885C005E8165 /* stack.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,6 +299,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MarkdownViewer/MarkdownViewer-Prefix.pch";
 				INFOPLIST_FILE = "MarkdownViewer/MarkdownViewer-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/MarkdownViewer/discount\"",
+				);
 				MACOSX_DEPLOYMENT_TARGET = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = "";
@@ -367,6 +317,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MarkdownViewer/MarkdownViewer-Prefix.pch";
 				INFOPLIST_FILE = "MarkdownViewer/MarkdownViewer-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/MarkdownViewer/discount\"",
+				);
 				MACOSX_DEPLOYMENT_TARGET = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = "";

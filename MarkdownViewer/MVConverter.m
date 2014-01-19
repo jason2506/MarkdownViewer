@@ -1,19 +1,19 @@
 //
 //  MVConverter.m
 //
-//  Copyright (c) 2012 Chi-En Wu, All rights reserved.
+//  Copyright (c) 2012-2014 Chi-En Wu. All rights reserved.
 //
 //  Redistribution and use in source and binary forms, with or without
 //  modification, are permitted provided that the following conditions are met:
 //
 //  * Redistributions of source code must retain the above copyright
-//  notice, this list of conditions and the following disclaimer.
+//    notice, this list of conditions and the following disclaimer.
 //  * Redistributions in binary form must reproduce the above copyright
-//  notice, this list of conditions and the following disclaimer in the
-//  documentation and/or other materials provided with the distribution.
-//  * Neither the name of the organization nor the
-//  names of its contributors may be used to endorse or promote products
-//  derived from this software without specific prior written permission.
+//    notice, this list of conditions and the following disclaimer in the
+//    documentation and/or other materials provided with the distribution.
+//  * Neither the name of the organization nor the names of its contributors
+//    may be used to endorse or promote products derived from this software
+//    without specific prior written permission.
 //
 //  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
 //  ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
@@ -61,21 +61,17 @@ static int MAX_NESTING_LEVEL = 16;
 {    
     NSData *data = [aString dataUsingEncoding:NSUTF8StringEncoding];
 
-    struct sd_callbacks callbacks;
-    struct html_renderopt options;
+    Document *document = mkd_string(data.bytes, data.length, 0);
+    mkd_compile(document, 0);
 
-    sdhtml_renderer(&callbacks, &options, 0);
-    struct sd_markdown *markdown = sd_markdown_new(0, MAX_NESTING_LEVEL, &callbacks, &options);
+    char *html;
+    int length = mkd_document(document, &html);
 
-    struct buf *outputBuffer = bufnew(WRITE_UNIT);
-    sd_markdown_render(outputBuffer, data.bytes, data.length, markdown);
-
-    NSString *result = [[NSString alloc] initWithBytes:outputBuffer->data
-                                                length:outputBuffer->size
+    NSString *result = [[NSString alloc] initWithBytes:html
+                                                length:length
                                               encoding:NSUTF8StringEncoding];
 
-    bufrelease(outputBuffer);
-    sd_markdown_free(markdown);
+    mkd_cleanup(document);
 
     return result;
 }
