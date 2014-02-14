@@ -8,9 +8,6 @@
 
 #import "MVConverter.h"
 
-static int WRITE_UNIT = 64;
-static int MAX_NESTING_LEVEL = 16;
-
 @implementation MVConverter
 
 #pragma mark Public Properties
